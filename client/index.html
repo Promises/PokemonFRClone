@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Pokemon FRC</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.1/pixi.min.js"></script>
+    <script src="/client/js/pixi.min.js"></script>
+    <style>* {
+        padding: 0;
+        margin: 0
+    }</style>
+</head>
+<body>
+
+<div id="signDiv">
+    Username: <input id="signDiv-username" type="text"><br>
+    Password: <input id="signDiv-password" type="password">
+    <button id="signDiv-signIn">Sign In</button>
+    <button id="signDiv-signUp">Sign Up</button>
+
+</div>
+
+<div id="gameDiv" style="display: none">
+    <canvas id="ctx" width="500" height="500" style="border: 1px solid black"></canvas>
+
+
+    <div id="chat-text" style="width: 500px;height: 100px;overflow-y: scroll">
+        <div>Hello</div>
+    </div>
+    <form id="chat-form">
+        <input id="chat-input" type="text" style="width: 500px">
+    </form>
+</div>
+
+
+<script src="/client/js/client.js"></script>
+<!--<script src="/client/js/pixitest.js"></script>-->
+</body>
+</html>
